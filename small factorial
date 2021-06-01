@@ -1,0 +1,15 @@
+# cook your dish here
+def fact(n):
+    fact=1
+    for i in range(n,0,-1):
+        fact*=i
+    return fact
+
+
+res=[]
+t=int(input())
+for i in range(t):
+    n=int(input())
+    res.append(fact(n))
+for i in res:
+    print(i)
